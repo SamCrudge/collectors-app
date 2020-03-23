@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: collectionapp
-# Generation Time: 2020-03-23 14:50:42 +0000
+# Generation Time: 2020-03-23 15:04:14 +0000
 # ************************************************************
 
 
@@ -29,7 +29,7 @@ CREATE TABLE `collection` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL DEFAULT '',
   `type` varchar(255) NOT NULL DEFAULT '',
-  `rating` tinyint(10) NOT NULL,
+  `rating` tinyint(2) NOT NULL,
   `desc` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
