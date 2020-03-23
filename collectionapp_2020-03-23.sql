@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: collectionapp
-# Generation Time: 2020-03-23 15:23:34 +0000
+# Generation Time: 2020-03-23 16:06:57 +0000
 # ************************************************************
 
 
@@ -46,7 +46,7 @@ VALUES
 	(5,'Focaccia','Strong White',7,'Focaccia is a flat oven-baked Italian bread made of strong (high-gluten) flour, oil, water, salt and yeast.'),
 	(6,'Grissini','wheat',2,'Grissini are generally pencil-sized sticks of crisp, dry bread originating in Italy.'),
 	(7,'Injera','Sourdough',8,'injera is a sourdough-risen flatbread with a unique, slightly spongy texture.'),
-	(8,'Knäckebröd ','Rye',9,'Knäckebröd is a flat and dry type of bread or cracker, containing mostly rye flour.'),
+	(8,'Knackebrod ','Rye',9,'Knäckebröd is a flat and dry type of bread or cracker, containing mostly rye flour.'),
 	(9,'Lavash','wheat',7,'Lavash is a thin flatbread of Armenian origin, popular in the Caucasus, Iran and Turkey.'),
 	(10,'Matzo / Matzoh','5 Grain',3,'Matzo is unleavened bread in the form of large crackers, traditionally eaten by Jews during Passover holiday.');
 
