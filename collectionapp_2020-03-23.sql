@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: collectionapp
-# Generation Time: 2020-03-23 15:04:14 +0000
+# Generation Time: 2020-03-23 15:18:38 +0000
 # ************************************************************
 
 
@@ -20,12 +20,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table collection
+# Dump of table Table of bread
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `collection`;
+DROP TABLE IF EXISTS `Table of bread`;
 
-CREATE TABLE `collection` (
+CREATE TABLE `Table of bread` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL DEFAULT '',
   `type` varchar(255) NOT NULL DEFAULT '',
@@ -34,10 +34,10 @@ CREATE TABLE `collection` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-LOCK TABLES `collection` WRITE;
-/*!40000 ALTER TABLE `collection` DISABLE KEYS */;
+LOCK TABLES `Table of bread` WRITE;
+/*!40000 ALTER TABLE `Table of bread` DISABLE KEYS */;
 
-INSERT INTO `collection` (`id`, `name`, `type`, `rating`, `desc`)
+INSERT INTO `Table of bread` (`id`, `name`, `type`, `rating`, `desc`)
 VALUES
 	(1,'Arepa','cornflour',6,'Arepa is a flat, round, cornmeal patty that is eaten in Venezuela and Colombia.'),
 	(2,'chapati','wheat',5,'Chapati is popular Indian flat bread made with wheat flour. Instead of being baked, chapatis are toasted over a griddle till they are freckled gold.'),
@@ -50,7 +50,7 @@ VALUES
 	(9,'Lavash','wheat',7,'Lavash is a thin flatbread of Armenian origin, popular in the Caucasus, Iran and Turkey.'),
 	(10,'Matzo / Matzoh','5 Grain',3,'Matzo is unleavened bread in the form of large crackers, traditionally eaten by Jews during Passover holiday.');
 
-/*!40000 ALTER TABLE `collection` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Table of bread` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
