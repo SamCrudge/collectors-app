@@ -1,5 +1,7 @@
 <?php 
 require_once "php/functions.php";
+$db = getdb();
+$breads = getbreads($db);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +24,7 @@ require_once "php/functions.php";
 
 <div id="bread">
     <?php
-        loopbread($breads);
+        echo loopbread($breads);
     ?>
 
 </div>
