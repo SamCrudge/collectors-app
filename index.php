@@ -1,5 +1,5 @@
 <?php 
-require "php/functions.php";
+require_once "php/functions.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
