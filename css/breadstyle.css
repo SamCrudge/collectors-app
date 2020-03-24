@@ -1,0 +1,74 @@
+@import url("css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Pacifico|Special+Elite&display=swap');
+/*font-family: 'Dancing Script', cursive;*/
+/*font-family: 'Pacifico', cursive;*/
+/*font-family: 'Caveat', cursive;*/
+/*font-family: 'Special Elite', cursive;*/
+
+html {
+    font-size: 62.5%;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 9rem;
+    padding-right: 50px;
+
+}
+.titlehead {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+#bread {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #2f4f4f;
+    border-radius: 25px;
+}
+
+.listitem {
+    width: 33.3%;
+    color: #ffffff;
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 65px 50px 65px;
+}
+
+.listitem h1{
+    font-size: 5.4rem;
+    text-decoration: underline;
+}
+
+img{
+    width: 450px;
+    height: 400px;
+    align-content: center;
+    border-radius: 25px;
+    animation-name: spin;
+    animation-duration: 4000ms;
+}
+
+footer{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    .listitem {
+        width: 100%;
+    }
+    #bread {
+        margin: 50px 50px 50px 50px;
+    }
+}
