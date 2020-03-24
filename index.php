@@ -8,7 +8,9 @@ require "php/functions.php";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>The Bread</title>
+<title>
+    The Bread
+</title>
 <link rel="stylesheet" type="text/css" href="css/breadstyle.css">
 </head>
 <body>
@@ -18,14 +20,11 @@ require "php/functions.php";
         <li>
             Bread
         </li>
-        <li>
-            more bread
-        </li>
     </ul>
 </nav>
 <div>
     <?php
-    loopbread($breads);
+        loopbread($breads);
     ?>
 </div>
 </body>
