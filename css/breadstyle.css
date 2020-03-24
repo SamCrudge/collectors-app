@@ -8,13 +8,23 @@
 html {
     font-size: 62.5%;
 }
+.heading {
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+    align-items: center;
+}
 
 .icon {
-    font-size: 6rem;
-    text-align: center;
+    font-size: 9rem;
+    padding-top: 4.5%;
+    padding-right: 50px;
+
 }
-h1 {
+.titlehead {
     font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
 }
 
 #bread {

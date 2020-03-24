@@ -10,10 +10,16 @@ require_once "php/functions.php";
     <link rel="stylesheet" type="text/css" href="css/breadstyle.css">
     <script src="https://kit.fontawesome.com/4b810358f2.js" crossorigin="anonymous"></script>
 <body>
-    <h1 class="icon">
-        <i class="fas fa-bread-slice"></i><br>
-        THE BREADIST
-    </h1>
+    <div class="heading">
+        <div class="icon">
+            <i class="fas fa-bread-slice"></i>
+        </div>
+        <div class="titlehead">
+            <h1>THE BREADIST</h1>
+        </div>
+    </div>
+
+
 <div id="bread">
     <?php
         loopbread($breads);
