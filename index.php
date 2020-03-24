@@ -1,9 +1,5 @@
 <?php 
 require "php/functions.php";
-
-
-//$query = $database->prepare("SELECT * FROM `bread` ORDER BY `id` ASC;");
-//$query->execute();
 ?>
 <!DOCTYPE html>
 <html lang="en">
