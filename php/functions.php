@@ -16,11 +16,13 @@ function getBreads(PDO $db): array
 function displayBread(array $breads): string {
     $echo = '';
     foreach ($breads as $bread) {
-        if (!empty($bread['imgurl']) &&
+        if (
+            !empty($bread['imgurl']) &&
             !empty($bread['name']) &&
             !empty($bread['type']) &&
             !empty($bread['rating']) &&
-            !empty($bread['desc'])) {
+            !empty($bread['desc']))
+        {
             $echo .= "<div class='listitem'>".
                 "<img src=".$bread['imgurl'].">".
                 "<h1>".$bread['name']."</h1><br>".
