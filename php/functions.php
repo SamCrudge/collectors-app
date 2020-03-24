@@ -18,6 +18,7 @@ function loopbread(array $breads): string {
         $echo .= "<div class='listitem'>".
                 "<img src=".$bread['imgurl'].">".
                 "<h1>".$bread['name']."</h1><br>".
+                " type: ".$bread['type']." | ".
                 " Rating: ".$bread['rating']."<br>".
                 "<br>"."Description:<br>".
                 "<br>".$bread['desc']."<br>".
