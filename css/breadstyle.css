@@ -39,6 +39,13 @@ h1 {
     font-size: 5.4rem;
 }
 
+img{
+    width: 450px;
+    height: 400px;
+    align-content: center;
+    border-radius: 25px;
+}
+
 footer{
     font-family: 'Pacifico', cursive;
     font-size: 4rem;
