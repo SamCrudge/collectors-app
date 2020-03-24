@@ -21,8 +21,8 @@ function displayBread(array $breads): string {
             !empty($bread['name']) &&
             !empty($bread['type']) &&
             !empty($bread['rating']) &&
-            !empty($bread['desc']))
-        {
+            !empty($bread['desc'])
+        ) {
             $echo .= "<div class='listitem'>".
                 "<img src=".$bread['imgurl'].">".
                 "<h1>".$bread['name']."</h1><br>".
