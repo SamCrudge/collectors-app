@@ -1,0 +1,45 @@
+@import url("css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Pacifico|Special+Elite&display=swap');
+/*font-family: 'Dancing Script', cursive;*/
+/*font-family: 'Pacifico', cursive;*/
+/*font-family: 'Caveat', cursive;*/
+/*font-family: 'Special Elite', cursive;*/
+
+html{
+    font-size: 62.5%;
+}
+
+.icon {
+    font-size: 6rem;
+    text-align: center;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#bread{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #2f4f4f;
+    border-radius: 25px;
+}
+
+.listitem{
+    width: 33.3%;
+    color: #ffffff;
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 65px 50px 65px;
+}
+
+.listitem h1{
+    font-size: 5.4rem;
+}
+footer{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    text-align: center;
+}

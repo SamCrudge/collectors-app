@@ -8,13 +8,11 @@ $breads = $query->fetchall();
 
 function loopbread($breads) {
     foreach ($breads as $bread){
-        echo $bread['name'];
-
-        echo "<div>";
+        echo "<div class='listitem'>";
             echo "<h1>".$bread['name']."</h1><br>";
-            echo $bread['type']."<br>";
-            echo $bread['rating']."<br>";
-            echo $bread['desc']."<br>";
+            echo "Type: ".$bread['type']."  |";
+            echo " Rating: ".$bread['rating']."<br>";
+            echo "<br>"."Description:<br>"."<br>".$bread['desc']."<br>";
          echo "</div>";
     }
 }
