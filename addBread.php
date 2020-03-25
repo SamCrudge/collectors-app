@@ -1,7 +1,7 @@
 <?php
 require_once "php/functions.php";
 if (!empty($_GET['error'])){
-    Echo "Please make sure all Field's are correct.";
+    echo "Please make sure all Field's are correct.";
 }
 ?>
 
@@ -19,7 +19,7 @@ if (!empty($_GET['error'])){
                 Home
             </a>
         </nav>
-        <form action="php/createItem.php" method="GET">
+        <form action="php/createItem.php" method="POST">
             <h1>
                 Please fill all Fields.
             </h1>
