@@ -14,11 +14,7 @@ $breads = getBreads($db);
         <script src="https://kit.fontawesome.com/4b810358f2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
-            <a href="addBread.php">
-                Add More Bread..
-            </a>
-        </nav>
+
         <div class="heading">
             <div class="icon">
                 <i class="fas fa-bread-slice"></i>
@@ -27,11 +23,18 @@ $breads = getBreads($db);
                 <h1>THE BREADIST</h1>
             </div>
         </div>
+        <div class="subtitle">
+            <h3>i know you knead me..</h3>
+        </div>
+        <nav>
+        <a class="page2" href="addBread.php">
+            <i class="far fa-plus-square"></i> <p>Add More Bread..</p>
+        </a>
+        </nav>
         <div id="bread">
-
             <?php
                 if (isset($_GET['success'])){
-                    echo "<div><p>New Bread Baked! Thank You for your addiction!</p></div>";
+                    echo "<div class='success'><p>New Bread Baked! Thank You for your addiction!</p></div>";
                 }
                 echo displayBread($breads);
             ?>
