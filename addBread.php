@@ -36,28 +36,22 @@ if (!empty($_GET['error'])){
                 </div>
                 <div class="formitem">
                     <label>Type of bread:</label>
-                    <select id="bread" name="type">
-                        <option value="wheat">Wheat</option>
-                        <option value="5 Grain">5 Grain</option>
-                        <option value="Sourdough">Sourdough</option>
-                        <option value="Rye">Rye</option>
-                        <option value="cornflour">Cornflour</option>
-                    </select>
+                    <input type="text" name="type" required>
                 </div>
                 <div class="formitem">
                     <label>Rating out of 10:</label>
-                    <input type=range name="rating" min=1 max=10 step=1 list=>
-                    <datalist id=tickmarks>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </datalist>
+                    <select id="range" name="range">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="5">6</option>
+                        <option value="5">7</option>
+                        <option value="5">8</option>
+                        <option value="5">9</option>
+                        <option value="5">10</option>
+                    </select>
                 </div>
                 <div class="formitem">
                     <label>Description of bread:</label>
