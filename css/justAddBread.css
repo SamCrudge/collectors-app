@@ -1,0 +1,66 @@
+@import url("css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Pacifico|Special+Elite&display=swap');
+/*font-family: 'Dancing Script', cursive;*/
+/*font-family: 'Pacifico', cursive;*/
+/*font-family: 'Caveat', cursive;*/
+/*font-family: 'Special Elite', cursive;*/
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+}
+
+nav {
+    display: flex;
+    padding-left: 40px;
+    color: black;
+}
+nav {
+    color: #95cb48;
+    text-decoration: none;
+}
+
+
+.icon {
+    font-size: 2rem;
+    color: #272a31;
+    padding: 15px;
+}
+
+.breadform {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    padding: 25px 25px 25px 25px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.formitem {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    font-size: 1.5rem;
+    font-family: 'Special Elite', cursive;
+}
+
+.formitem label {
+    padding-right: 5px;
+}
+
+.formbutton {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+.formbutton1{
+    width: 200px;
+
+    font-family: 'Special Elite', cursive;
+}

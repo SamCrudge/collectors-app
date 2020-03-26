@@ -25,4 +25,59 @@ class functionsTest extends TestCase {
         $this->expectException(TypeError::class);
         displayBread(1);
     }
+
+    function testValidateUserInput_success() {
+        $exspected = true;
+        $breads = ['imgurl' => 'something', 'name' => 'fghfg','type' => 'sdf', 'rating' => 1, 'desc' => 'sdhfkjkl'];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
+
+    function testValidateUserInput_fail() {
+        $exspected = false;
+        $breads = ['dfgg' => 'something', 'fdg' => 'fghfg','tydfge' => 'sdf', 'ratdfging' => 1, 'dedfgdsc' => 'sdhfkjkl'];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
+
+    function testValidateUserInput_failEmptyImgurl() {
+        $exspected = false;
+        $breads = ['imgurl' => '', 'name' => 'fghfg','type' => 'sdf', 'rating' => 1, 'desc' => 'sdhfkjkl'];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
+
+    function testValidateUserInput_failEmptyName() {
+        $exspected = false;
+        $breads = ['imgurl' => '', 'name' => '','type' => 'sdf', 'rating' => 1, 'desc' => 'sdhfkjkl'];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
+
+    function testValidateUserInput_failEmptyType() {
+        $exspected = false;
+        $breads = ['imgurl' => '', 'name' => 'fghfg','type' => '', 'rating' => 1, 'desc' => 'sdhfkjkl'];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
+
+    function testValidateUserInput_failEmptyRating() {
+        $exspected = false;
+        $breads = ['imgurl' => '', 'name' => 'fghfg','type' => 'sdf', 'rating' => "", 'desc' => 'sdhfkjkl'];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
+
+    function testValidateUserInput_failEmptyDesc() {
+        $exspected = false;
+        $breads = ['imgurl' => '', 'name' => 'fghfg','type' => 'sdf', 'rating' => 1, 'desc' => ''];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
+    function testValidateUserInput_failEmptyAll() {
+        $exspected = false;
+        $breads = ['imgurl' => '', 'name' => '','type' => '', 'rating' => "", 'desc' => ''];
+        $actual = validateUsrInput($breads);
+        $this->assertSame($actual, $exspected);
+    }
 }

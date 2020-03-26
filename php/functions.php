@@ -37,4 +37,33 @@ function displayBread(array $breads): string {
     return $echo;
 }
 
+function insertIntoDB(array $newBread,PDO $db) :bool
+{
+    $query = $db->prepare("INSERT INTO `bread` (`name`, `type`, `rating`, `desc`, `imgurl`) VALUES (:name, :type, :rating, :desc, :imgurl);");
+    $newBreadAdd = $query->execute([
+        ":name" => $newBread["name"],
+        ":type" => $newBread["type"],
+        ":rating" => $newBread["rating"],
+        ":desc" => $newBread["desc"],
+        ":imgurl" => $newBread["imgurl"]
+    ]
+    );
+    return $newBreadAdd;
+}
 
+function validateUsrInput(array $newBread) :bool
+{
+    if (
+        !empty($newBread['imgurl']) &&
+        !empty($newBread['name']) &&
+        !empty($newBread['type']) &&
+        !empty($newBread['rating']) &&
+        !empty($newBread['desc'])
+    ) {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
