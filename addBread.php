@@ -40,7 +40,7 @@ if (!empty($_GET['error'])){
                 </div>
                 <div class="formitem">
                     <label>Rating out of 10:</label>
-                    <select id="range" name="range">
+                    <select id="range" name="rating">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -62,7 +62,7 @@ if (!empty($_GET['error'])){
                     <input type="text" name="imgurl" required>
                 </div>
                 <div class="formbutton">
-                    <input type="submit" class="formbutton1" name="submit">
+                    <input type="submit" class="formbutton1">
                 </div>
             </form>
         </div>

@@ -7,9 +7,9 @@ if (validateUsrInput($_POST)) {
         header("location: ../index.php?success=1");
         die();
     }
+} else {
+    header("location: ../addBread.php?error=1");
+    die();
 }
-header("location: ../addBread.php?error=1");
-die();
-
 
 

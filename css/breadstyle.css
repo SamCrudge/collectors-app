@@ -16,6 +16,7 @@ nav {
 
 a {
     color: #272a31;
+
 }
 
 a p {
@@ -41,7 +42,7 @@ a p {
 }
 
 .icon {
-    font-size: 9rem;
+    font-size: 10rem;
     padding-right: 50px;
 }
 
@@ -61,6 +62,8 @@ a p {
 
 .success {
     font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #F7F7F7;
 }
 
 #bread {
