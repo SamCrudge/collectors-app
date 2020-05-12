@@ -24,17 +24,18 @@ $breads = getBreads($db);
             </div>
         </div>
         <div class="subtitle">
-            <h3>i know you knead me..</h3>
+            <h3 class="puff-in-center">i know you knead me..</h3>
         </div>
         <nav>
         <a class="page2" href="addBread.php">
             <i class="far fa-plus-square"></i> <p>Add More Bread..</p>
         </a>
+
         </nav>
         <div id="bread">
             <?php
                 if (isset($_GET['success'])){
-                    echo "<div class='success'><p>New Bread Baked! Thank You for your addiction!</p></div>";
+                    echo "<div class='success'><p><i class=\"far fa-thumbs-up\"></i> Success.</p></div>";
                 }
                 echo displayBread($breads);
             ?>
